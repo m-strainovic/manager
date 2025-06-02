@@ -70,7 +70,7 @@
   <script>
     const rawQuestions = [
       {
-        question: "Dein Unternehmen bietet Benefits wie warme Mahlzeit, Sportvergünstigungen und ein Jobrad-Programm. Trotzdem bleibt die Motivation gering. Was tust du?",
+        question: "dein Unternehmen bietet Benefits wie warme Mahlzeit, Sportvergünstigungen und ein Jobrad-Programm. Trotzdem bleibt die Motivation gering. Was tust du?",
         answers: [
           "Du entwickelst eine interne Kommunikationskampagne zur Erklärung und Sichtbarkeit der Angebote.",
           "Du schaffst das Mittagessen ab und ersetzt es durch Gutscheine.",
@@ -203,6 +203,9 @@
     });
 
     showQuestion();
+
+    // 🔑 Wichtig: Damit onclick="selectAnswer(...)" funktioniert
+    window.selectAnswer = selectAnswer;
   </script>
 </body>
 </html>
